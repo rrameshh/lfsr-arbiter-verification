@@ -1,0 +1,17 @@
+[options]
+mode bmc
+depth 60
+
+[engines]
+smtbmc boolector
+
+[script]
+read -formal lfsr_8bit.sv
+read -formal random_arbiter.sv
+read -formal arbiter_formal.sv
+prep -top arbiter_formal
+
+[files]
+lfsr_8bit.sv
+random_arbiter.sv
+arbiter_formal.sv
