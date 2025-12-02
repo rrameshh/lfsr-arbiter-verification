@@ -19,7 +19,7 @@ This project explores verification of a 4-requestor LFSR-based arbiter with inte
 | `lfsr_8bit.sv`          | 8-bit maximal-length LFSR module                                       |
 | `random_arbiter.sv`     | Arbiter module with LFSR-based priority                                |
 | `arbiter_properties.sv` | Property observer (checks bounded starvation)                          |
-| `property_test.sv`      | Simulation testbench for selected seeds                                |
+| `properties_test.sv`      | Simulation testbench for selected seeds                                |
 | `algorithm_test.sv`     | Simulation testbench implementing Property Strengthening (Algorithm 1) |
 | `arbiter_formal.sv`     | Formal verification harness with assertions                            |
 | `arbiter_bmc.sby`       | SymbiYosys script for BMC                                              |
@@ -28,7 +28,7 @@ This project explores verification of a 4-requestor LFSR-based arbiter with inte
 
 ## 3. Running Simulation
 
-### 3.1 Manual Simulation (`property_test`)
+### 3.1 Manual Simulation (`properties_test`)
 
 Tests specific seeds and prints when `req[0]` is granted.
 
